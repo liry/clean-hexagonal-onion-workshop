@@ -1,5 +1,7 @@
 package nl.maikkingma.clean_hexagonal_onion.domain.author;
 
+import java.util.List;
+
 import nl.maikkingma.clean_hexagonal_onion.data.author.AuthorMapper;
 import nl.maikkingma.clean_hexagonal_onion.data.author.AuthorRepository;
 import org.springframework.stereotype.Service;
@@ -14,5 +16,11 @@ public class AuthorService {
 
     public void registerAuthor(Author author) {
         authorRepository.save(AuthorMapper.mapToJPA(author));
+    }
+
+    public List<Author> findAll() {
+        return authorRepository.findAll().stream()
+                .map(authorJPA -> AuthorMapper.mapFromJpa(authorJPA))
+                .toList();
     }
 }

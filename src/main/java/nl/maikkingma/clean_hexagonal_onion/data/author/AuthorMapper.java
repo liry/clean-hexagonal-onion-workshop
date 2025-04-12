@@ -9,4 +9,12 @@ public class AuthorMapper {
                 .lastName(author.lastName())
                 .build();
     }
+
+    public static Author mapFromJpa(AuthorJPA authorJPA) {
+        return Author.builder()
+                .id(authorJPA.getId())
+                .firstName(authorJPA.getFirstName())
+                .lastName(authorJPA.getLastName())
+                .build();
+    }
 }
