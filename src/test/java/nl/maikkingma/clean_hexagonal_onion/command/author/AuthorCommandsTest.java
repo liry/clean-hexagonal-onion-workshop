@@ -1,7 +1,5 @@
 package nl.maikkingma.clean_hexagonal_onion.command.author;
 
-import nl.maikkingma.clean_hexagonal_onion.command.AuthorCommands;
-import nl.maikkingma.clean_hexagonal_onion.command.RegisterAuthorDTO;
 import nl.maikkingma.clean_hexagonal_onion.domain.author.Author;
 import nl.maikkingma.clean_hexagonal_onion.domain.author.AuthorService;
 import org.junit.jupiter.api.Test;
