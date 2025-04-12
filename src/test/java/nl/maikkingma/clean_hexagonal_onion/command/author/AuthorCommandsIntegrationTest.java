@@ -1,6 +1,7 @@
 package nl.maikkingma.clean_hexagonal_onion.command.author;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import nl.maikkingma.clean_hexagonal_onion.command.RegisterAuthorDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
